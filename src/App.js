@@ -8,6 +8,7 @@ import logo from './logo.svg';  // Import an image. (React will do optimizations
 import './App.css';             // Recommendation: no individual style files. Just use index.css
 
 import Greet from './Greet';
+import Counter from './Counter';
 
 
 // "App" is a component.
@@ -18,12 +19,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
+        <Counter />
+        <Counter />
+        <Counter />
         <Greet />
+        {/* This is a comment in JSX */}
         <Greet whom="Matt" />
         <Greet whom="Judah" />
         <Greet whom="Chelsey" />
-        
         <a
           className="App-link"
           href="https://reactjs.org"

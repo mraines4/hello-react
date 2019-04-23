@@ -9,6 +9,7 @@ import './App.css';             // Recommendation: no individual style files. Ju
 
 import Greet from './Greet';
 import Counter from './Counter';
+import ClickyCounter from './ClickyCounter';
 
 
 // "App" is a component.
@@ -19,22 +20,25 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <ClickyCounter />
+        <ClickyCounter />
+        <ClickyCounter />
+        {/* <Counter />
         <Counter />
         <Counter />
-        <Counter />
-        <Greet />
+        <Greet /> */}
         {/* This is a comment in JSX */}
-        <Greet whom="Matt" />
+        {/* <Greet whom="Matt" />
         <Greet whom="Judah" />
-        <Greet whom="Chelsey" />
-        <a
+        <Greet whom="Chelsey" /> */}
+        {/* <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
     </div>
   );
